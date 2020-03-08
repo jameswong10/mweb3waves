@@ -10,8 +10,7 @@ class App extends React.Component {
     authFunc() {
         const authData = { data: "Auth on my site" };
         if (WavesKeeper) {
-            WavesKeeper.auth( authData )
-            .then(auth => {
+            WavesKeeper.auth( authData ).then(auth => {
                 console.log( auth ); //displaying the result on the console
                 /*...processing data */
             }).catch(error => {
@@ -35,3 +34,4 @@ const app = document.getElementById('app');
 if(app){
     ReactDOM.render(<App/>, app);
 }
+//this is for lesson 1.4
